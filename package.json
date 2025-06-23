@@ -1,0 +1,44 @@
+{
+  "name": "building-planner",
+  "version": "1.0.0",
+  "description": "A web application for creating, editing, and managing building plans with an intuitive drawing interface",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd building-planner-backend && npm install && cd ../building-planner-frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd building-planner-backend && npm run dev",
+    "dev:frontend": "cd building-planner-frontend && npm run dev",
+    "build": "cd building-planner-frontend && npm run build",
+    "test": "cd building-planner-frontend && npm test",
+    "start": "cd building-planner-backend && npm start",
+    "clean": "rm -rf node_modules building-planner-backend/node_modules building-planner-frontend/node_modules"
+  },
+  "keywords": [
+    "building",
+    "planner",
+    "drawing",
+    "canvas",
+    "react",
+    "nodejs",
+    "sqlite",
+    "annotations",
+    "architecture"
+  ],
+  "author": "Building Planner Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/building-planner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/building-planner/issues"
+  },
+  "homepage": "https://github.com/yourusername/building-planner#readme"
+}
